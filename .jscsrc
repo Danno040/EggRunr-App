@@ -1,0 +1,10 @@
+{
+  "preset": "airbnb",
+  "requireSemicolons": true,
+  "maximumLineLength": 120,
+  "esprima": "./node_modules/esprima-fb",
+  "fileExtensions": [
+    ".js",
+    ".jsx"
+  ]
+}

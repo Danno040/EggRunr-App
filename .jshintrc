@@ -1,0 +1,14 @@
+{
+  "node": true,
+  "esnext": true,
+  "bitwise": true,
+  "eqeqeq": true,
+  "latedef": true,
+  "noarg": true,
+  "undef": true,
+  "unused": true,
+  "trailing": true,
+  "smarttabs": true,
+  "white": true,
+  "validthis": true
+}

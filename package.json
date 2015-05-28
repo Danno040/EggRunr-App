@@ -3,9 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node_modules/react-native/packager/packager.sh"
+    "start": "node_modules/react-native/packager/packager.sh",
+    "hint": "node_modules/jsxhint/cli.js app/",
+    "cs": "node_modules/jscs/bin/jscs app/"
   },
   "dependencies": {
     "react-native": "^0.4.2"
+  },
+  "devDependencies": {
+    "jscs": "~1.13.0",
+    "jsxhint": "^0.15.0",
+    "esprima-fb": "15001.1.0-dev-harmony-fb"
   }
 }
