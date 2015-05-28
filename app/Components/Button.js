@@ -11,7 +11,7 @@ var styles = StyleSheet.create({
   buttonText: {
     fontSize: 18,
     color: '#111',
-    alignSelf: 'center',
+    alignSelf: 'center'
   },
   button: {
     height: 45,
@@ -23,7 +23,7 @@ var styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 10,
     alignSelf: 'stretch',
-    justifyContent: 'center',
+    justifyContent: 'center'
   }
 });
 
@@ -33,8 +33,8 @@ class Button extends React.Component {
         <TouchableHighlight onPress={this.props.onButtonPress} style={styles.button}>
           <Text style={styles.buttonText}>{this.props.text}</Text>
         </TouchableHighlight>
-      )
+      );
     }
-};
+}
 
 module.exports = Button;

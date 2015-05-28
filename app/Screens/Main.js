@@ -16,14 +16,14 @@ var styles = StyleSheet.create({
     padding: 30,
     marginTop: 65,
     flexDirection: 'column',
-    backgroundColor: '#48BBEC',
+    backgroundColor: '#48BBEC'
   },
   title: {
     marginBottom: 20,
     fontSize: 25,
     textAlign: 'center',
-    color: '#fff',
-  },
+    color: '#fff'
+  }
 });
 
 class Main extends React.Component {
@@ -35,22 +35,22 @@ class Main extends React.Component {
           <Button text={'Review Previous Orders'} onButtonPress={() => this.showPreviousOrdersScreen()}></Button>
           <Button text={'Update Billing Info'}></Button>
         </View>
-      )
+      );
     }
 
     showOrderEggsScreen() {
       this.props.navigator.push({
         title: 'Order Eggs',
-        component: OrderEggsScreen,
+        component: OrderEggsScreen
       });
     }
 
     showPreviousOrdersScreen() {
       this.props.navigator.push({
         title: 'Recent Orders',
-        component: RecentOrdersScreen,
+        component: RecentOrdersScreen
       });
     }
-};
+}
 
 module.exports = Main;

@@ -5,8 +5,30 @@ var {
   StyleSheet,
   TouchableHighlight,
   View,
-  Text,
+  Text
 } = React;
+
+var styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+    borderBottomWidth: 0.5,
+    borderBottomColor: 'rgba(0, 0, 0, 0.1)'
+  },
+  orderId: {
+    fontSize: 20,
+    marginRight: 10
+  },
+  eggCount: {
+    fontSize: 20,
+    marginRight: 10
+  },
+  confirmation: {
+    color: 'green'
+  }
+});
 
 var OrderListRow = React.createClass({
   render: function() {
@@ -25,28 +47,6 @@ var OrderListRow = React.createClass({
         </View>
       </TouchableHighlight>
     );
-  },
-});
-
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    paddingHorizontal: 10,
-    paddingVertical: 10,
-    borderBottomWidth: 0.5,
-    borderBottomColor: 'rgba(0, 0, 0, 0.1)',
-  },
-  orderId: {
-    fontSize: 20,
-    marginRight: 10
-  },
-  eggCount: {
-    fontSize: 20,
-    marginRight: 10,
-  },
-  confirmation: {
-    color: 'green',
   }
 });
 

@@ -15,19 +15,19 @@ var styles = StyleSheet.create({
     padding: 30,
     marginTop: 65,
     flexDirection: 'column',
-    backgroundColor: '#48BBEC',
+    backgroundColor: '#48BBEC'
   },
   title: {
     marginBottom: 20,
     fontSize: 25,
     textAlign: 'center',
-    color: '#fff',
+    color: '#fff'
   },
   countSelector: {
     backgroundColor: 'white',
     borderColor: 'black',
     color: 'black',
-    borderRadius: 5,
+    borderRadius: 5
   }
 });
 
@@ -42,6 +42,6 @@ class OrderEggs extends React.Component {
         </View>
       );
     }
-};
+}
 
 module.exports = OrderEggs;

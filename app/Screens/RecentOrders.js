@@ -4,7 +4,7 @@ var {
   StyleSheet,
   ListView,
   View,
-  Text,
+  Text
 } = React;
 
 // Load Components
@@ -15,8 +15,8 @@ var ViewOrderScreen = require('./ViewOrder');
 var styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
-  },
+    flexDirection: 'column'
+  }
 });
 
 var RecentOrdersScreen = React.createClass({
@@ -25,7 +25,7 @@ var RecentOrdersScreen = React.createClass({
     var ordersDS = new ListView.DataSource({rowHasChanged: (r1, r2) => r1.id !== r2.id});
 
     return {
-      ordersDS: ordersDS.cloneWithRows(OrderService.getRecentOrders()),
+      ordersDS: ordersDS.cloneWithRows(OrderService.getRecentOrders())
     };
   },
 
@@ -55,7 +55,7 @@ var RecentOrdersScreen = React.createClass({
         />
       </View>
     );
-  },
+  }
 });
 
 module.exports = RecentOrdersScreen;

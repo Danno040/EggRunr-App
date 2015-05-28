@@ -4,8 +4,20 @@ var React = require('react-native');
 var {
   StyleSheet,
   View,
-  Text,
+  Text
 } = React;
+
+var styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderBottomWidth: 0.5,
+    borderBottomColor: 'rgba(0, 0, 0, 0.1)'
+  }
+});
 
 var ViewOrderScreen = React.createClass({
   render: function() {
@@ -22,19 +34,7 @@ var ViewOrderScreen = React.createClass({
         </Text>
       </View>
     );
-  },
-});
-
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    borderBottomWidth: 0.5,
-    borderBottomColor: 'rgba(0, 0, 0, 0.1)',
-  },
+  }
 });
 
 module.exports = ViewOrderScreen;
